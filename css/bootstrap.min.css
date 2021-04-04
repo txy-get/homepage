@@ -5754,7 +5754,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 .navbar-inverse .navbar-nav>.open>a:focus,
 .navbar-inverse .navbar-nav>.open>a:hover {
     color: #e7e7e7;
-    background-color: black
+    background-color: rgb(63, 61, 62)
 }
 
 @media (max-width:767px) {
