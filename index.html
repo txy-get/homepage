@@ -1,1 +1,414 @@
-hello world
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Txy Blog</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <style type="text/css">
+        /* 启用流式布局 */
+        /* @media screen and(min-width: 1200px){
+        body{background-color: orange;}
+    }
+    @media screen and(min-width: 1024px) and(max-width: 1199px){
+        body{background-color: red;}
+    }
+    @media screen and(min-width: 768px) and(max-width:1023px){
+        body{background-color: rosybrown;}
+    }
+    @media screen and(min-width: 480px) and(max-width:767px){
+        body{background-color: blue;}
+    }
+    @media screen and(min-width: 479px){
+        body{background-color: aquamarine;}
+    } */
+    </style>
+</head>
+<style>
+    @font-face {
+        font-family: '方正兰亭';
+        src: url();
+    }
+
+    @font-face {
+        font-family: '腾祥伯当行楷GB18030';
+        src: url(./fonts/腾祥伯当行楷GB18030.TTF);
+    }
+
+    @font-face {
+        font-family: '方正喵呜';
+        src: url(./fonts/方正喵呜_GBK.ttf);
+    }
+
+    .nav-effect:hover {
+        background-color: #e7e7e7;
+    }
+
+    /* 引用方正兰亭的字体 */
+    .fontx {
+        font-size: 17px;
+        font-family: '方正兰亭';
+    }
+
+    .fonty {
+        font-size: 17px;
+        font-family: '腾祥伯当行楷GB18030';
+    }
+
+    .fontz {
+        font-size: 30px;
+        font-family: '方正喵呜';
+    }
+
+    .fonti {
+        font-size: 19px;
+        color: black;
+    }
+
+    /* a{
+        text-decoration: none; 
+    }*/
+    .fonti:hover {
+        color: pink;
+    }
+
+    .nav-pic-bottom {
+        width: 1920px;
+    }
+
+    .dream {
+        height: 370px;
+    }
+
+    /* 设置背景图片 */
+    .box1 {
+        width: 1900px;
+        height: 1300px;
+        background-image: url("./img/nmg-2.png");
+        /* 设置背景的重复方式 */
+        background-repeat: no-repeat;
+        /* 设置背景范围 */
+        background-size: 1900px;
+        /* background-attachment: fixed; */
+    }
+
+
+    .box3 {
+        width: 700px;
+        height: 386px;
+    }
+
+    .box4 {
+        width: 1100px;
+        height: 386px;
+        margin-left: 50px;
+    }
+
+    .box5 {
+        height: 600px;
+        width: 670px;
+        background-color: rgba(248, 248, 248, 0.5);
+        margin-left: -10px;
+    }
+
+    .box6 {
+        background-color: rgba(248, 248, 248, 0.5);
+        margin-left: 70px;
+    }
+
+    .box-last {
+        background-color: #e7e7e7;
+        height: 50px;
+        width: 1900px;
+        text-align: center;
+        margin-top: -15px;
+    }
+
+
+    .main-1 {
+        height: 75px;
+        width: 75px;
+        margin-top: 15px;
+    }
+</style>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <img src="./img/nav.jpg" alt="导航栏头图">
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="nav-effect fontx"><a href="#">Home page<span class="glyphicon glyphicon-home"></span></a>
+                    </li>
+                    <li class="nav-effect fontx"><a href="./article-1.html">Detail <span
+                                class="glyphicon glyphicon-eye-open"></span></a></li>
+                    <li class="nav-effect fontx"><a href="./comment.html" target="_blank">Random comments <span
+                                class="glyphicon glyphicon-book"></span></a></li>
+                    <li class="nav-effect fontx"><a href="https://space.bilibili.com/86884147" target="_blank">Subscribe
+                            me <span class="glyphicon glyphicon-heart"></span></a></li>
+                    <li class="nav-effect fontx"><a
+                            href="https://www.bilibili.com/video/BV1vy4y1J7XX?from=search&seid=15642605744456305850"
+                            target="_blank">Miku's
+                            13th special column！</a></li>
+                    <li class="nav-effect fontx dropdown"><a href="#" class="dropdown-toggle"
+                            data-toggle="dropdown">About
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="fontx"> <a href="https://space.bilibili.com/86884147"
+                                    target="_blank">Bilibili</a></li>
+                            <li class="fontx"> <a href="https://user.qzone.qq.com/2810390638" target="_blank">Qzone</a>
+                            </li>
+                            <li class="fontx"> <a href="https://www.sina.com.cn/" target="_blank">Sina</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="box1">
+        <div class="container">
+            <div class="maincontent">
+                <div class="row">
+                    <div class="col-md-8 fontx">1</div>
+                    <div class="col-md-4 fontx">2</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 fontx">3</div>
+                    <div class="col-md-4 fontx">4</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 fontx">&nbsp;</div>
+                    <div class="col-md-4 fontx">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 fontx">&nbsp;</div>
+                    <div class="col-md-4 fontx">&nbsp;</div>
+                </div>
+                <div class="row fontx">
+                    <div class="col-md-8">
+                        <div class="container box3">
+                            <div id="myCarousel" class="carousel slide">
+                                <!-- 轮播指针 -->
+                                <ul class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                </ul>
+                                <!-- 轮播内容 -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="./img/banner2-2.png" alt="HF3" class="img-thumbnail">
+                                        <div class="carousel-caption">HF3完结撒花</div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="./img/banner1.jpg" class="img-thumbnail" alt="御坂美琴">
+                                        <div class="carousel-caption">御坂美琴改行挖矿？</div>
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="./img/banner3.png" class="img-thumbnail" alt="kaguya">
+                                        <div class="carousel-caption">她是如此沙雕</div>
+                                    </div>
+                                </div>
+                                <!-- 轮播导航按钮 -->
+                                <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a href="#myCarousel" class="right carousel-control" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 fontx">
+                        <div class="box3">
+                            <img src="./img/dream1-2.png" class="dream img-thumbnail" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row fontx box4">
+                    <div class="col-sm-8 box5">
+                        <img class="main-1 img-rounded" src="./img/main-1.gif" alt="">
+                        <a class="fonti" href="./article-1.html"><b>怎么面对未来</b></a>——做好自己的摆渡人为你打开通向世界的门
+                        <br>
+                        <br>
+                        <img class="main-1 img-rounded" src="./img/mian-2.gif" alt="">
+                        <a class="fonti" href="./article-2.html"> <b>舍友异闻录！？</b></a>——自律舍友的一天
+                        <br>
+                        <br>
+                        <img class="main-1 img-rounded" src="./img/mian-3.gif" alt="">
+                        <a class="fonti" href="./article-3.html"><b>把握机会</b></a>——机会爱捉弄人（bushi）
+                        <br>
+                        <br>
+                        <img class="main-1 img-rounded" src="./img/mian-4.gif" alt="">
+                        <a class="fonti" href="./article-4.html"><b>大学生爱情观</b> </a>——我们又何尝不是工具人呢？
+                        <br>
+                        <br>
+                        <img class="main-1 img-rounded" src="./img/mian-5.gif" alt="">
+                        <a class="fonti" href="./article-5.html"> <b>如何避免间歇性堕落</b> </a>——提升自控力，做你想做的事
+                    </div>
+                    <div class="col-md-4 box6">
+                        <h3 class="fontz">标签聚合</h3>
+                        <br>
+                        <!-- 第一行 -->
+                        <button type="button" class="btn btn-danger" title="" data-container="body"
+                            data-toggle="popover" data-placement="left" data-content="">
+                            辉夜
+                        </button>
+                        <button type="button" class="btn btn-default-pink" title="" data-container="body"
+                            data-toggle="popover" data-placement="left" data-content="">
+                            Kaguya
+                        </button>
+                        <button type="button" class="btn btn-default-yellow" title="" data-container="body"
+                            data-toggle="popover" data-placement="left" data-content="">
+                            早坂爱
+                        </button>
+                        <button type="button" class="btn btn-default" title="" data-container="body"
+                            data-toggle="popover" data-placement="left" data-content="">
+                            白银御行
+                        </button>
+                        <!-- 第二行 -->
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-success" title="" data-container="body"
+                            data-toggle="popover" data-placement="left" data-content="">
+                            HEVC&H265
+                        </button>
+                        <button type="button" class="btn btn-default" title="" data-container="body"
+                            data-toggle="popover" data-placement="left" data-content="">
+                            3840*2160p
+                        </button>
+                        <button type="button" class="btn btn-primary" title="" data-container="body"
+                            data-toggle="popover" data-placement="top" data-content="">
+                            track
+                        </button>
+                        <!-- 第三行 -->
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-warning" title="" data-container="body"
+                            data-toggle="popover" data-placement="bottom" data-content="">
+                            Aegisub
+                        </button>
+                        <button type="button" class="btn btn-default" title="" data-container="body"
+                            data-toggle="popover" data-placement="left" data-content="">
+                            Arctime
+                        </button>
+                        <button type="button" class="btn btn-default-pink" title="" data-container="body"
+                            data-toggle="popover" data-placement="left" data-content="">
+                            Sweetsub
+                        </button>
+                        <br>
+                        <br>
+                        <!-- 第四行 -->
+                        <button type="button" class="btn btn-info" title="" data-container="body" data-toggle="popover"
+                            data-placement="top" data-content="">
+                            Megui
+                        </button>
+                        <button type="button" class="btn btn-default" title="" data-container="body"
+                            data-toggle="popover" data-placement="top" data-content="">
+                            Premiere Pro
+                        </button>
+                        <button type="button" class="btn btn-default-purple" title="" data-container="body"
+                            data-toggle="popover" data-placement="top" data-content="">
+                            Affect Effect
+                        </button>
+                        <br>
+                        <br>
+                        <!-- 第五行 -->
+                        <button type="button" class="btn btn-default-yellow" title="" data-container="body"
+                            data-toggle="popover" data-placement="top" data-content="">
+                            某科学的超电磁炮T
+                        </button>
+                        <button type="button" class="btn btn-default" title="" data-container="body"
+                            data-toggle="popover" data-placement="top" data-content="">
+                            御坂美琴
+                        </button>
+                        <button type="button" class="btn btn-info" title="" data-container="body" data-toggle="popover"
+                            data-placement="top" data-content="">
+                            白井黑子
+                        </button>
+                        <br>
+                        <br>
+                        <!-- 第六行 -->
+                        <button type="button" class="btn btn-default-purple" title="" data-container="body"
+                            data-toggle="popover" data-placement="top" data-content="">
+                            MX player
+                        </button>
+                        <button type="button" class="btn btn-default-pink" title="" data-container="body"
+                            data-toggle="popover" data-placement="top" data-content="">
+                            Potplayer
+                        </button>
+                        <button type="button" class="btn btn-default" title="" data-container="body"
+                            data-toggle="popover" data-placement="top" data-content="">
+                            ABPlayer
+                        </button>
+                        <br>
+                        <br>
+                        <!-- 第七行 -->
+                        <button type="button" class="btn btn-default" title="" data-container="body"
+                            data-toggle="popover" data-placement="top" data-content="">
+                            C++
+                        </button>
+                        <button type="button" class="btn btn-warning" title="" data-container="body"
+                            data-toggle="popover" data-placement="top" data-content="">
+                            HTML5&CSS3&
+                        </button>
+                        <button type="button" class="btn btn-danger" title="" data-container="body"
+                            data-toggle="popover" data-placement="top" data-content="">
+                            Javascript
+                        </button>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="box-last fonty">
+        © 2021 Txy Blog. ALL RIGHTS RESERVED. <br>
+        powered by Txy
+    </div>
+    <!-- 鼠标移动效果 -->
+    <script type="text/javascript">
+        var a_idx = 0;
+        jQuery(document).ready(function ($) {
+            $("body").click(function (e) {
+                var a = new Array("好好学习", "天天向上");
+                var $i = $("<span />").text(a[a_idx]);
+                a_idx = (a_idx + 1) % a.length;
+                var x = e.pageX,
+                    y = e.pageY;
+                $i.css({
+                    "z-index": 9999999999999999999999999999,
+                    "top": y - 20,
+                    "left": x,
+                    "position": "absolute",
+                    "font-weight": "bold",
+                    "color": "#ff7bb0"
+                });
+                $("body").append($i);
+                $i.animate({
+                    "top": y - 180,
+                    "opacity": 0
+                },
+                    1500,
+                    function () {
+                        $i.remove();
+                    });
+            });
+        });
+    </script>
+</body>
+
+</html>
