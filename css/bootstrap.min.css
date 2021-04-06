@@ -1451,8 +1451,8 @@ img {
     height: auto;
     padding: 4px;
     line-height: 1.42857143;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #c1c1c1;
+    border: 1px solid #c1c1c1;
     border-radius: 4px;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
@@ -3786,14 +3786,14 @@ fieldset[disabled] .btn-default:hover {
 }
 .btn-default-pink {
     color: #333;
-    background-color: pink;
+    background-color: rgb(255, 201, 210);
     border-color: #ccc
 }
 
 .btn-default-pink.focus,
 .btn-default-pink:focus {
     color: #333;
-    background-color: pink;
+    background-color: rgb(253, 169, 183);
     border-color: #8c8c8c
 }
 
@@ -3914,7 +3914,7 @@ fieldset[disabled] .btn-default-purple:hover {
 }
 .btn-default-yellow {
     color: #333;
-    background-color: rgb(255, 255, 75);
+    background-color: rgb(255, 255, 0);
     border-color: #ccc
 }
 
@@ -3927,7 +3927,7 @@ fieldset[disabled] .btn-default-purple:hover {
 
 .btn-default-yellow:hover {
     color: #333;
-    background-color: rgb(255, 255, 0);
+    background-color: rgb(240, 240, 113);
     border-color: #adadad
 }
 

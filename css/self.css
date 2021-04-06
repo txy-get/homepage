@@ -1,0 +1,114 @@
+@font-face {
+    font-family: '方正兰亭';
+    src: url();
+}
+
+@font-face {
+    font-family: '腾祥伯当行楷GB18030';
+    src: url(./fonts/腾祥伯当行楷GB18030.TTF);
+}
+
+@font-face {
+    font-family: '方正喵呜';
+    src: url(./fonts/方正喵呜_GBK.ttf);
+}
+
+.nav-effect:hover {
+    background-color: #e7e7e7;
+}
+
+/* 引用方正兰亭的字体 */
+.fontx {
+    font-size: 17px;
+    font-family: '方正兰亭';
+}
+
+.fonty {
+    font-size: 17px;
+    font-family: '腾祥伯当行楷GB18030';
+}
+
+.fontz {
+    font-size: 30px;
+    font-family: '方正喵呜';
+}
+
+.fonti {
+    font-size: 19px;
+    color: black;
+}
+
+/* a{
+    text-decoration: none; 
+}*/
+.fonti:hover {
+    color: pink;
+}
+
+.nav-pic-bottom {
+    width: 1920px;
+}
+
+.dream {
+    height: 370px;
+}
+
+/* 设置背景图片 */
+.box1 {
+    width: 1900px;
+    height: 1300px;
+    background-image: url("./img/nmg-7.png");
+    /* 设置背景的重复方式 */
+    background-repeat: no-repeat;
+    /* 设置背景范围 */
+    background-size: 1900px;
+    /* background-attachment: fixed; */
+}
+
+
+.box3 {
+    width: 700px;
+    height: 386px;
+    
+}
+
+.box4 {
+    width: 1100px;
+    height: 386px;
+    margin-left: 50px;
+}
+
+.box5 {
+    height: 550px;
+    width: 670px;
+    background-color: rgba(248, 248, 248, 0.8);
+    margin-left: -10px;
+}
+
+.box6 {
+    height: 550px;
+    width: 372px;
+    background-color: rgba(248, 248, 248, 0.8);
+    margin-left: 10px;
+
+}
+
+.box-last {
+    /* background-color: #e7e7e7; */
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 1900px;
+    text-align: center;
+    margin-top: -15px;
+}
+
+
+.main-1 {
+    height: 75px;
+    width: 75px;
+    margin-top: 15px;
+}
+.dream{
+    margin-left: -30px;
+    height: 375px;
+}
