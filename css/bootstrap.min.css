@@ -3799,7 +3799,7 @@ fieldset[disabled] .btn-default:hover {
 
 .btn-default-pink:hover {
     color: #333;
-    background-color: pink;
+    background-color: rgb(255, 186, 197);
     border-color: #adadad
 }
 
@@ -3851,20 +3851,20 @@ fieldset[disabled] .btn-default-pink:hover {
 .btn-default-purple {
     color: #333;
     background-color: rgb(187, 102, 187);
-    border-color: #ccc
+    border-color:rgb(187, 102, 187);
 }
 
 .btn-default-purple.focus,
 .btn-default-purple:focus {
     color: #333;
     background-color: rgb(187, 102, 187)e;
-    border-color: #8c8c8c
+    border-color: rgb(187, 102, 187);
 }
 
 .btn-default-purple:hover {
     color: #333;
-    background-color: rgb(187, 102, 187);
-    border-color: #adadad
+    background-color: rgb(207, 71, 207);
+    border-color: rgb(187, 102, 187);
 }
 
 .btn-default-purple.active,
@@ -3914,7 +3914,7 @@ fieldset[disabled] .btn-default-purple:hover {
 }
 .btn-default-yellow {
     color: #333;
-    background-color: yellow;
+    background-color: rgb(255, 255, 75);
     border-color: #ccc
 }
 
@@ -3927,7 +3927,7 @@ fieldset[disabled] .btn-default-purple:hover {
 
 .btn-default-yellow:hover {
     color: #333;
-    background-color: yellow;
+    background-color: rgb(255, 255, 0);
     border-color: #adadad
 }
 
